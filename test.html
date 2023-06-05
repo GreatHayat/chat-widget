@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Adjust as needed */
+      }
+
+      .row {
+        display: flex;
+        padding: 0px 25px;
+      }
+
+      .row1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 10%;
+        background-color: #ffffff;
+        border-bottom: 1px solid rgb(226, 232, 240);
+      }
+      .avatar {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: linear-gradient(to left, #ff5f6d, #ffc371);
+      }
+      .bot_title {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+      }
+      .row3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15%;
+        border-top: 1px solid rgb(226, 232, 240);
+        background-color: #ffffff;
+      }
+
+      .row2 {
+        padding: 10px 20px;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f1f5f9;
+        overflow-y: auto;
+      }
+
+      .message {
+        display: flex;
+        margin-bottom: 15px;
+      }
+
+      .sender {
+        justify-content: flex-start;
+      }
+
+      .receiver {
+        justify-content: flex-end;
+      }
+
+      .message .bubble {
+        max-width: 70%;
+        padding: 15px;
+        border-radius: 5px;
+        color: #ffffff;
+      }
+
+      .sender .bubble {
+        background-color: #6366f1;
+      }
+
+      .receiver .bubble {
+        color: #333;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      .message_text {
+        padding: 10px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .input-control {
+        width: 100%;
+        border: none;
+        background-color: #f1f5f9;
+        padding: 13px;
+        border-radius: 5px;
+      }
+      .btn-primary {
+        border: none;
+        color: #fff;
+        background-color: #4f45e4;
+        padding: 13px;
+        border-radius: 5px;
+      }
+
+      .propritery {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        color: #666464;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <div class="row row1">
+        <div class="avatar"></div>
+        <span class="bot_title">LangChain Bot</span>
+      </div>
+      <!-- CHAT AREA -->
+      <div class="row row2">
+        <div class="message sender">
+          <div class="bubble">
+            Hello, I'm here to help. What can I do for you today? (This is for
+            demo purposes only. We only support ~10 questions per minute.)
+          </div>
+        </div>
+        <div class="message receiver">
+          <div class="bubble">I'm good, thanks for asking.</div>
+        </div>
+      </div>
+      <!-- MESSAGE AREA -->
+      <div class="row row3">
+        <div class="message_text">
+          <input
+            type="text"
+            placeholder="Ask your question..."
+            class="input-control"
+          />
+
+          <button class="btn-primary">Send</button>
+        </div>
+
+        <div class="propritery">
+          Powered by &nbsp;<a
+            href="https://github.com/GreatHayat"
+            target="_blank"
+            >GreatHayat</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
