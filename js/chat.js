@@ -17,7 +17,7 @@ function initializeChatWidget(e) {
   i.id = "chat-box";
   i.classList.add("closed");
   //var d = "https://openchat.so/chat/" + e.token;
-  var d = "http://127.0.0.1:5500/test.html";
+  var d = "https://coral-kelcie-81.tiiny.site/";
   i.innerHTML =
     '<iframe src="' +
     d +
@@ -30,8 +30,7 @@ function initializeChatWidget(e) {
 function loadCSS() {
   var e = document.createElement("link");
   e.rel = "stylesheet";
-  e.href =
-    "https://drive.google.com/uc?export=view&id=1PTwRvLZoyY8zwgkZDo2VEPlNWFvd8QTX";
+  e.href = "https://static.staticsave.com/widgetassets/chat.css";
   document.head.appendChild(e);
 }
 
